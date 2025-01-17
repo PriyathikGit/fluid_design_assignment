@@ -114,9 +114,9 @@ function Calendar({
         months:
           'flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0 w-full ',
         month: 'space-y-4 md:w-full ',
-        caption: 'flex justify-between pt-1 relative items-center border-b-2',
-        caption_label: 'text-md font-medium px-4 py-2',
-        nav: 'space-x-1 flex items-center',
+        caption: 'flex justify-between pt-1 relative items-center border-b-2 ',
+        caption_label: 'text-md font-medium px-4 py-2 ',
+        nav: 'space-x-1 flex items-center ',
         nav_button: cn(
           buttonVariants({ variant: 'outline' }),
           'h-7 w-7 bg-transparent p-0 border border-white pr-4 hover:opacity-100'
@@ -126,7 +126,7 @@ function Calendar({
         table: 'w-full border-collapse space-y-1',
         head_row: 'flex justify-around ',
         head_cell:
-          'text-muted-foreground rounded-md w-8 font-normal text-[0.8rem]',
+          'text-black text-[0.95rem] rounded-md w-8 font-normal text-[0.8rem] font-semibold ',
         row: 'flex w-full mt-2 ',
         cell: cn(
           'relative p-0 text-center w-full text-sm focus-within:relative focus-within:z-20  [&:has([aria-selected].day-outside)]:bg-accent/50 [&:has([aria-selected].day-range-end)]:rounded-r-md',

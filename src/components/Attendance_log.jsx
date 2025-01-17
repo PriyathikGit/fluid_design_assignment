@@ -18,7 +18,7 @@ const AttendanceLog = () => {
           <h2 className="font-semibold text-lg text-textbg text-center">Attendance Log</h2>
         </div>
         <div className='h-full content-center md:w-[15rem]'>
-          <h2 className="font-semibold text-lg text-textbg text-center">Leave Log</h2>
+          <h2 className="font-semibold text-lg text-textGray text-center">Leave Log</h2>
         </div>
 
       </div>
@@ -29,12 +29,12 @@ const AttendanceLog = () => {
         <table className="min-w-full border-collapse border border-gray-200 rounded-xl">
           <thead>
             <tr className="">
-              <th className="border-b-[1px] border-gray-300 px-4 py-2 text-left">Date</th>
-              <th className="border-b-[1px] border-gray-300 px-4 py-2 text-left">Status</th>
-              <th className="border-b-[1px] border-gray-300 px-4 py-2 text-left">Clock In</th>
-              <th className="border-b-[1px] border-gray-300 px-4 py-2 text-left">Clock Out</th>
-              <th className="border-b-[1px] border-gray-300 px-4 py-2 text-left">Duration</th>
-              <th className="border-b-[1px] border-gray-300 px-4 py-2 text-left">Action</th>
+              <th className="border-b-[1px] border-gray-300 px-4 py-2 font-medium text-left">Date</th>
+              <th className="border-b-[1px] border-gray-300 px-4 py-2 font-medium text-left">Status</th>
+              <th className="border-b-[1px] border-gray-300 px-4 py-2 font-medium text-left">Clock In</th>
+              <th className="border-b-[1px] border-gray-300 px-4 py-2 font-medium text-left">Clock Out</th>
+              <th className="border-b-[1px] border-gray-300 px-4 py-2 font-medium text-left">Duration</th>
+              <th className="border-b-[1px] border-gray-300 px-4 py-2 font-medium text-left">Action</th>
             </tr>
           </thead>
           <tbody className='mt-6'>

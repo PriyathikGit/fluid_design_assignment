@@ -16,16 +16,16 @@ const ProfileSummary = () => {
             {details.map((item) => (
                 <div
                     key={item.id}
-                    className={`flex border-r-[1px] h-full  mx-auto px-2 md:p-0 
+                    className={`flex border-r-[1px] h-full  mx-auto px-2 md:p-0 text-center max-md:items-center
                         ${item.id === 1 ? "flex-col md:flex-row gap-4 items-center justify-center" : 
                             "flex-col gap-2 items-start justify-center content-center flex-wrap"}`}
                     style={{
                         width: `${100 / details.length}%`
                     }}
                 >
-                    <span className='text-textGray text-sm md:text-md'>{item.name}</span>
+                    <span className='text-textGray  md:text-lg max-md:text-[0.8rem]'>{item.name}</span>
                     <span>{item?.svg}</span>
-                    <span className='text-textbg font-semibold text-xl'>{item?.count}</span>
+                    <span className='text-textbg font-semibold text-2xl '>{item?.count}</span>
                 </div>
             ))}
         </div>
