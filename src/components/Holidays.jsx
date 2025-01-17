@@ -17,7 +17,7 @@ const Holidays = () => {
                 {holidays.map(item => (
                     <div key={item.id} className='flex justify-between px-4 py-6 border-b-2'>
                         <span >{item.date}</span>
-                        <span >{item.greeting}</span>
+                        <span className='text-textGray'>{item.greeting}</span>
                     </div>
                 ))}
             </div>

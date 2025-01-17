@@ -18,7 +18,7 @@ const AttendanceLog = () => {
           <h2 className="font-semibold text-lg text-textbg text-center">Attendance Log</h2>
         </div>
         <div className='h-full content-center md:w-[15rem]'>
-          <h2 className="font-semibold text-lg text-textGray text-center">Leave Log</h2>
+          <h2 className="font-normal text-lg text-textGray text-center">Leave Log</h2>
         </div>
 
       </div>

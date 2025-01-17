@@ -8,7 +8,7 @@ import Calender from './components/Calendar'
 function App() {
 
   return (
-    <div className="flex h-full w-full bg-gray-100">
+    <div className="flex h-full w-full bg-[#F8FAFC]">
       {/* Sidebar */}
       <Sidebar />
 
