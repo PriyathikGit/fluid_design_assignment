@@ -9,11 +9,11 @@ const Holidays = () => {
     ]
     return (
         <div className='w-full h-auto'>
-            <div className='flex justify-around'>
-                <span className='font-semibold'>Upcoming Holidays</span>
-                <span className='underline'>View All</span>
+            <div className='flex justify-around md:space-x-14'>
+                <span className='text-lg font-medium'>Upcoming Holidays</span>
+                <span className='underline font-medium text-md'>View All</span>
             </div>
-            <div className=' md:mt-12'>
+            <div className=' md:mt-8 px-4'>
                 {holidays.map(item => (
                     <div key={item.id} className='flex justify-between px-4 py-6 border-b-2 md:text-md lg:text-sm'>
                         <span >{item.date}</span>
