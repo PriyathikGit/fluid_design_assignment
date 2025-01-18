@@ -7,7 +7,7 @@ const Calender = () => {
 
 
   return (
-    <div className="bg-white shadow py-4 rounded w-full md:w-[30%] md:ml-6 space-y-12">
+    <div className="bg-white shadow py-4 rounded w-full lg:w-[30%] lg:ml-6 lg:space-y-12">
       <Calendar
         mode="single"
         selected={date}

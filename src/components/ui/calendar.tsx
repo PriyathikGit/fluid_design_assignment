@@ -35,10 +35,10 @@ function Calendar({
         caption_label: 'text-md font-medium px-4 py-2 ',
         nav: 'space-x-1 flex items-center ',
         nav_button: cn(
-          buttonVariants({ variant: 'outline' }),
-          'h-7 w-7 bg-transparent p-0 border border-white pr-4 hover:opacity-100'
+          buttonVariants({ variant: 'ghost' }),
+          'h-7 w-5  bg-transparent p-0 border border-white pr-4 hover:opacity-100'
         ),
-        nav_button_previous: 'absolute right-8',
+        nav_button_previous: 'absolute right-4',
         nav_button_next: 'absolute right-1',
         table: 'w-full border-collapse space-y-1',
         head_row: 'flex justify-around ',

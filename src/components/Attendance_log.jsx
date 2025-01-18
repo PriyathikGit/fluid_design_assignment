@@ -3,7 +3,7 @@ import React from 'react';
 const AttendanceLog = () => {
   const logs = [
     { date: '01-10-24', status: 'Present', clockIn: '10:02 AM', clockOut: '7:00 PM', duration: '9 hrs 2 min', action: "Get Approval" },
-    { date: '30-09-24', status: 'Present', clockIn: '10:45 AM', clockOut: '7:15 PM', duration: '9 hrs 2 min', action: "Get Approval" },
+    { date: '30-09-24', status: 'Present', clockIn: '10:45 AM (L)', clockOut: '7:15 PM', duration: '9 hrs 2 min', action: "Get Approval" },
     { date: '29-09-24', status: 'Absent', clockIn: '--', clockOut: '--', duration: '--', action: "Get Approval" },
     { date: '28-09-24', status: 'Present', clockIn: '10:10 Am', clockOut: '7:30 Pm', duration: '9 hrs 2 min', action: "Get Approval" },
     { date: '27-09-24', status: 'Weekly Off', clockIn: '--', clockOut: '--', duration: '--', action: "Get Approval" },
@@ -12,7 +12,7 @@ const AttendanceLog = () => {
   ];
 
   return (
-    <div className="bg-white shadow rounded w-full h-auto">
+    <div className="bg-white shadow rounded lg:w-full h-auto">
       <div className='flex justify-around h-16 items-center border-b-[1px] border-slate-300'>
         <div className='h-full content-center border-b-2 md:w-[15rem] border-black'>
           <h2 className="font-semibold text-lg text-textbg text-center">Attendance Log</h2>
@@ -41,10 +41,10 @@ const AttendanceLog = () => {
             {logs.map((row, index) => (
               <tr key={index} className="h-16">
                 <td className="border-b-[1px] border-gray-300 px-4 py-2">{row.date}</td>
-                <td className="border-b-[1px] border-gray-300 px-4 py-2 text-gray-500 font-normal">{row.status}</td>
-                <td className="border-b-[1px] border-gray-300 px-4 py-2 text-gray-500 font-normal">{row.clockIn}</td>
-                <td className="border-b-[1px] border-gray-300 px-4 py-2 text-gray-500 font-normal">{row.clockOut}</td>
-                <td className="border-b-[1px] border-gray-300 px-4 py-2 text-gray-500 font-normal">{row.duration}</td>
+                <td className="border-b-[1px] border-gray-300 px-4 py-2 text-[#334155] font-normal">{row.status}</td>
+                <td className="border-b-[1px] border-gray-300 px-4 py-2 text-[#334155] font-normal">{row.clockIn}</td>
+                <td className="border-b-[1px] border-gray-300 px-4 py-2 text-[#334155] font-normal">{row.clockOut}</td>
+                <td className="border-b-[1px] border-gray-300 px-4 py-2 text-[#334155] font-normal">{row.duration}</td>
                 <td className="border-b-[1px] border-gray-300 px-4 py-2">
                   <button className="underline">{row.action}</button>
                 </td>

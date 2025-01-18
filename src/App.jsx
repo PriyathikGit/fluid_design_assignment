@@ -18,7 +18,7 @@ function App() {
         <Header />
 
 
-        <div className="md:px-6 py-4 flex flex-col gap-6">
+        <div className="lg:px-6 py-4 flex flex-col gap-6">
           <div className="flex w-full md:flex-row flex-col-reverse">
               <AttendanceLog />
             <Calender />

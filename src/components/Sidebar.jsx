@@ -27,7 +27,7 @@ const Sidebar = () => {
 
     return (
         <>
-            <div className="bg-white sticky left-0 w-64 max-h-screen px-4 py-6 hidden md:block">
+            <div className="bg-white sticky left-0 w-64 max-h-screen px-4 py-6 hidden lg:block">
                 <img src={logo} alt="" className='w-[70%] mx-auto mb-6' />
                 <div>
                     <div className='flex gap-4 flex-col'>
@@ -56,12 +56,13 @@ const Sidebar = () => {
             </div>
 
             {/* mobile nav  */}
-            <Menu onClick={() => handleNavbar()} className='absolute top-0 left-0 block md:hidden'/>
-            {navbar && <div className='block md:hidden absolute w-full h-full bg-white'>
-                <X 
-                onClick={()=>setNavbar(false)}
+            <Menu onClick={() => handleNavbar()} className='absolute top-2 left-1 block lg:hidden' />
+            {navbar && <div className='block md:hidden absolute w-full h-screen bg-white z-10 '>
+                <X
+                    onClick={() => setNavbar(false)}
+                    className=' right-0 absolute'
                 />
-                <div className='flex gap-4 flex-col'>
+                <div className='flex gap-4 flex-col z-0 mt-8'>
                     {nav.map((item) => (
                         <div key={item.id} className={`flex space-x-4 cursor-pointer py-2 p-2 rounded-lg
                         ${selected === item.id ? 'bg-blackbg text-white' : 'bg-white text-black'}`}
