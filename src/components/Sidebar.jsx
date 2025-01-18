@@ -32,7 +32,7 @@ const Sidebar = () => {
                 <div>
                     <div className='flex gap-4 flex-col'>
                         {nav.map((item) => (
-                            <div key={item.id} className={`flex space-x-4 cursor-pointer py-4 p-4 rounded-lg
+                            <div key={item.id} className={`flex space-x-4 cursor-pointer py-4 p-3 rounded-lg
                         ${selected === item.id ? 'bg-blackbg text-white' : 'bg-white text-black'}`}
                                 onClick={() => handleSelect(item.id)}>
                                 <img src={item?.img} alt=""
